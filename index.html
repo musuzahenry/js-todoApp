@@ -1,0 +1,52 @@
+<html lang="eng">
+<head>
+    <meta charset="UTF-8" />
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App - By Musuza Henry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+   
+        <div class="todo-header">
+
+          <div class="todo-head">
+          <img src="images/AddressBook.png">
+          <h2>ToDo List</h2>
+          </div>    
+          
+          <form  onsubmit="CreateToDoItems();" class="input-div">
+          <input type="text" id="todoText" class="todo-input" placeholder="Add Your Items" />
+          <img src="images/plus.png" alt="+" id="AddUpdateClick" onclick="CreateToDoItems();" />
+          </form>
+
+
+          <div class="clear-div">     
+          <button onclick="clearItems()">Clear Items</button>
+          </p>
+          </div>
+
+        </div>
+
+
+        <div class="todo-body">
+            <h5 id="Alert"></h5>
+            <ul id="list-items" class="list-items"></ul>
+        </div>
+
+    </div><!-- close  container-->
+
+    <script type="text/javascript" src="script.js"></script>
+
+
+   <!-- 
+   Reading material from:
+   https://medium.com/@sharathchandark/how-to-build-a-todo-list-app-using-html-css-and-javascript-340cda6e3f9f
+   by: Sharathchandark
+   -->
+    
+</body>
+</html>
+
+
